@@ -1,0 +1,335 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     11360,        327]
+NotebookOptionsPosition[     10433,        302]
+NotebookOutlinePosition[     10836,        318]
+CellTagsIndexPosition[     10793,        315]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"<<", "FeynCalc`"}]], "Input",
+ CellChangeTimes->{{3.992975772518738*^9, 3.992975782756403*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"0609bb02-0500-0c47-be3c-3d01f1b95042"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"FeynCalc \"\>", "Text",
+    StripOnInput->False,
+    FontWeight->Bold], "\[InvisibleSpace]", 
+   StyleBox["\<\"10.2.0 (stable version). For help, use the \"\>", "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox[
+    TagBox[
+     ButtonBox[
+      RowBox[{
+       RowBox[{"online", " ", "documentation"}], ","}],
+      BaseStyle->"Hyperlink",
+      ButtonData:>{
+        URL["https://feyncalc.github.io/referenceDev"], None},
+      ButtonNote->"https://feyncalc.github.io/referenceDev"],
+     DisplayForm], "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox["\<\" visit the \"\>", "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox[
+    TagBox[
+     ButtonBox["forum",
+      BaseStyle->"Hyperlink",
+      ButtonData:>{
+        URL["https://github.com/FeynCalc/feyncalc/discussions"], None},
+      ButtonNote->"https://github.com/FeynCalc/feyncalc/discussions/"],
+     DisplayForm], "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox["\<\" and have a look at the supplied \"\>", "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox[
+    TagBox[
+     ButtonBox[
+      RowBox[{"examples", "."}],
+      BaseStyle->"Hyperlink",
+      ButtonFunction:>SystemOpen[
+        FileNameJoin[{FeynCalc`$FeynCalcDirectory, "Examples"}]],
+      Evaluator->Automatic,
+      Method->"Preemptive"],
+     DisplayForm], "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox["\<\" The PDF-version of the manual can be downloaded \"\>", 
+    "Text",
+    StripOnInput->False], "\[InvisibleSpace]", 
+   StyleBox[
+    TagBox[
+     ButtonBox[
+      RowBox[{"here", "."}],
+      BaseStyle->"Hyperlink",
+      ButtonData:>{
+        URL[
+        "https://github.com/FeynCalc/feyncalc-manual/releases/download/dev-\
+manual/FeynCalcManual.pdf"], None},
+      ButtonNote->
+       "https://github.com/FeynCalc/feyncalc-manual/releases/download/dev-\
+manual/FeynCalcManual.pdf"],
+     DisplayForm], "Text",
+    StripOnInput->False]}],
+  SequenceForm[
+   Style["FeynCalc ", "Text", Bold], 
+   Style["10.2.0 (stable version). For help, use the ", "Text"], 
+   Style[
+    DisplayForm[
+     ButtonBox["online documentation,", ButtonData :> {
+        URL["https://feyncalc.github.io/referenceDev"], None}, BaseStyle -> 
+      "Hyperlink", ButtonNote -> "https://feyncalc.github.io/referenceDev"]], 
+    "Text"], 
+   Style[" visit the ", "Text"], 
+   Style[
+    DisplayForm[
+     ButtonBox["forum", ButtonData :> {
+        URL["https://github.com/FeynCalc/feyncalc/discussions"], None}, 
+      BaseStyle -> "Hyperlink", ButtonNote -> 
+      "https://github.com/FeynCalc/feyncalc/discussions/"]], "Text"], 
+   Style[" and have a look at the supplied ", "Text"], 
+   Style[
+    DisplayForm[
+     ButtonBox[
+     "examples.", BaseStyle -> "Hyperlink", ButtonFunction :> SystemOpen[
+        FileNameJoin[{FeynCalc`$FeynCalcDirectory, "Examples"}]], Evaluator -> 
+      Automatic, Method -> "Preemptive"]], "Text"], 
+   Style[" The PDF-version of the manual can be downloaded ", "Text"], 
+   Style[
+    DisplayForm[
+     ButtonBox["here.", ButtonData :> {
+        URL[
+        "https://github.com/FeynCalc/feyncalc-manual/releases/download/dev-\
+manual/FeynCalcManual.pdf"], None}, BaseStyle -> "Hyperlink", ButtonNote -> 
+      "https://github.com/FeynCalc/feyncalc-manual/releases/download/dev-\
+manual/FeynCalcManual.pdf"]], "Text"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.992976466031292*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"8ef1b2d6-863a-e246-a1db-3226c31d0449"],
+
+Cell[BoxData[
+ StyleBox["\<\"If you use FeynCalc in your research, please evaluate \
+FeynCalcHowToCite[] to learn how to cite this software.\"\>", "Text",
+  StripOnInput->False]], "Print",
+ CellChangeTimes->{3.992976466042988*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"42b04afd-8fba-7642-8476-c36777370f56"],
+
+Cell[BoxData[
+ StyleBox["\<\"Please keep in mind that the proper academic attribution of \
+our work is crucial to ensure the future development of this package!\"\>", 
+  "Text",
+  StripOnInput->False,
+  FontSlant->Italic]], "Print",
+ CellChangeTimes->{3.992976466043764*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"4309cfa2-1a40-1346-b97b-fe6eb28d5955"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Definimos", " ", "un", " ", "cuadrivector", " ", "temporal", " ", 
+     "unitario", " ", "n"}], "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", ",", "0", ",", "0", ",", "0"}], ")"}], " ", "As\[IAcute]", 
+     " ", 
+     RowBox[{"\[Gamma]", "^", "0"}], " ", "se", " ", "escribe", " ", "como", " ", 
+     RowBox[{"GS", "[", "n", "]"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"n", " ", "slash"}], ")"}], " ", "y", " ", "su", " ", 
+     "producto", " ", "escalar", " ", "con", " ", "un", " ", "momento", " ", 
+     "extrae", " ", "la", " ", "energ\[IAcute]a"}]}], "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"SP", "[", 
+      RowBox[{"n", ",", "n"}], "]"}], "=", "1"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SP", "[", 
+      RowBox[{"n", ",", "pi"}], "]"}], "=", "En"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SP", "[", 
+      RowBox[{"n", ",", "pf"}], "]"}], "=", "En"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Cinem\[AAcute]tica", " ", "de", " ", "la", " ", "dispersi\[OAcute]n", " ",
+      "el\[AAcute]stica"}], "*)"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SP", "[", 
+      RowBox[{"pi", ",", "pi"}], "]"}], "=", 
+     RowBox[{"m", "^", "2"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SP", "[", 
+      RowBox[{"pf", ",", "pf"}], "]"}], "=", 
+     RowBox[{"m", "^", "2"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SP", "[", 
+      RowBox[{"pi", ",", "pf"}], "]"}], "=", 
+     RowBox[{
+      RowBox[{"En", "^", "2"}], "-", 
+      RowBox[{
+       RowBox[{"p", "^", "2"}], " ", 
+       RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}]}], ";"}], "\n", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "C\[AAcute]lculo", " ", "del", " ", "promedio", " ", "con", " ", "la", " ",
+      "traza"}], "*)"}], 
+   RowBox[{
+    RowBox[{"traza", "=", 
+     RowBox[{
+      RowBox[{"TR", "[", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"GS", "[", "pf", "]"}], "+", "m"}], ")"}], ".", 
+        RowBox[{"GS", "[", "n", "]"}], ".", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"GS", "[", "pi", "]"}], "+", "m"}], ")"}], ".", 
+        RowBox[{"GS", "[", "n", "]"}]}], "]"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"8", " ", 
+        RowBox[{"m", "^", "2"}]}], ")"}]}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"trazaEval", "=", 
+     RowBox[{
+      RowBox[{"traza", "//", "DiracSimplify"}], "//", "Simplify"}]}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Uso", " ", "de", " ", "reglas", " ", "de", " ", 
+     "simplificaci\[OAcute]n"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"reglasFinales", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"m", "^", "2"}], "->", 
+        RowBox[{
+         RowBox[{"En", "^", "2"}], "-", 
+         RowBox[{"p", "^", "2"}]}]}], ",", 
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Theta]", "]"}], "->", 
+        RowBox[{"1", "-", 
+         RowBox[{"2", " ", 
+          RowBox[{
+           RowBox[{"Sin", "[", 
+            RowBox[{"\[Theta]", "/", "2"}], "]"}], "^", "2"}]}]}]}]}], 
+      "}"}]}], ";"}], "\[IndentingNewLine]", "\n", 
+   RowBox[{
+    RowBox[{"paso1", "=", 
+     RowBox[{
+      RowBox[{"trazaEval", "/.", " ", "reglasFinales"}], "//", "Simplify"}]}],
+     ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Momento", " ", "por", " ", "velocidad", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"p", "^", "2"}], "=", 
+       RowBox[{
+        RowBox[{"En", "^", "2"}], "*", 
+        RowBox[{"v", "^", "2"}]}]}], ")"}]}], "*)"}], "\n", 
+   RowBox[{"trazaFinal", "=", 
+    RowBox[{
+     RowBox[{"paso1", "/.", " ", 
+      RowBox[{
+       RowBox[{"p", "^", "2"}], "->", 
+       RowBox[{
+        RowBox[{"En", "^", "2"}], " ", 
+        RowBox[{"v", "^", "2"}]}]}]}], "//", "FullSimplify"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.992975772518738*^9, 3.992975782756403*^9}, 
+   3.9929760241910267`*^9, {3.992976416433235*^9, 3.9929764170961914`*^9}, {
+   3.9929764658969097`*^9, 3.992976468602003*^9}, {3.992976533066572*^9, 
+   3.992976552874012*^9}, {3.992977157139595*^9, 3.9929772415578747`*^9}, {
+   3.992977279809778*^9, 3.992977346344061*^9}, {3.9929773885765896`*^9, 
+   3.9929774422876225`*^9}},
+ CellLabel->
+  "In[122]:=",ExpressionUUID->"5899333e-e6b7-ce4c-82a2-64b20a81ab1f"],
+
+Cell[BoxData[
+ FormBox[
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["En", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["v", "2"], " ", 
+       RowBox[{"cos", "(", "\[Theta]", ")"}]}], "-", 
+      SuperscriptBox["v", "2"], "+", "2"}], ")"}]}], 
+   RowBox[{"2", " ", 
+    SuperscriptBox["m", "2"]}]], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.9929757733912315`*^9, 3.992975784562477*^9}, 
+   3.9929760249299774`*^9, 3.9929765343858795`*^9, 3.9929768206672993`*^9, 
+   3.9929771588543205`*^9, {3.9929773017758064`*^9, 3.992977350713299*^9}, 
+   3.992977462447035*^9},
+ CellLabel->
+  "Out[132]=",ExpressionUUID->"93ea5928-1051-de46-8df7-f90c70d28216"]
+}, Open  ]]
+},
+WindowSize->{571, 627.5},
+WindowMargins->{{349, Automatic}, {36.5, Automatic}},
+FrontEndVersion->"14.3 para Microsoft Windows (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e01a85f1-8fc0-7543-8aec-6bd71fceeb51"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 197, 3, 28, "Input",ExpressionUUID->"0609bb02-0500-0c47-be3c-3d01f1b95042"],
+Cell[CellGroupData[{
+Cell[798, 29, 3637, 96, 73, "Print",ExpressionUUID->"8ef1b2d6-863a-e246-a1db-3226c31d0449"],
+Cell[4438, 127, 346, 7, 48, "Print",ExpressionUUID->"42b04afd-8fba-7642-8476-c36777370f56"],
+Cell[4787, 136, 390, 9, 48, "Print",ExpressionUUID->"4309cfa2-1a40-1346-b97b-fe6eb28d5955"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5226, 151, 4494, 128, 526, "Input",ExpressionUUID->"5899333e-e6b7-ce4c-82a2-64b20a81ab1f"],
+Cell[9723, 281, 694, 18, 69, "Output",ExpressionUUID->"93ea5928-1051-de46-8df7-f90c70d28216"]
+}, Open  ]]
+}
+]
+*)
+
