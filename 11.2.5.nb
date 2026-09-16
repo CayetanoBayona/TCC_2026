@@ -1,0 +1,71 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      1738,         61]
+NotebookOptionsPosition[      1255,         44]
+NotebookOutlinePosition[      1658,         60]
+CellTagsIndexPosition[      1615,         57]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"p", "^", "3"}], "*", 
+    RowBox[{"Log", "[", "p", "]"}]}], ",", "p"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9931445316551304`*^9, 3.993144557225107*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"b73f486d-d2a3-7a4d-827c-69685ee194a6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   FractionBox[
+    SuperscriptBox["p", "4"], "16"]}], "+", 
+  RowBox[{
+   FractionBox["1", "4"], " ", 
+   SuperscriptBox["p", "4"], " ", 
+   RowBox[{"Log", "[", "p", "]"}]}]}]], "Output",
+ CellChangeTimes->{3.993144558003006*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"5217e50a-f757-824b-8aa6-4b7093164d1b"]
+}, Open  ]]
+},
+WindowSize->{571, 627.5},
+WindowMargins->{{349, Automatic}, {36.5, Automatic}},
+FrontEndVersion->"14.3 para Microsoft Windows (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"7a53a7b1-de6e-944b-ac7e-387e9636eb5f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 312, 7, 42, "Input",ExpressionUUID->"b73f486d-d2a3-7a4d-827c-69685ee194a6"],
+Cell[891, 31, 348, 10, 67, "Output",ExpressionUUID->"5217e50a-f757-824b-8aa6-4b7093164d1b"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
